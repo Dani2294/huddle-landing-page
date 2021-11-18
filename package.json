@@ -1,12 +1,19 @@
 {
-  "name": "huddle-landing-page-with-alternating-feature-blocks-master",
-  "version": "1.0.0",
-  "description": "![Design preview for the Huddle landing page with alternating feature blocks coding challenge](./design/desktop-preview.jpg)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+	"name": "huddle-landing-page-with-alternating-feature-blocks-master",
+	"version": "1.0.0",
+	"description": "![Design preview for the Huddle landing page with alternating feature blocks coding challenge](./design/desktop-preview.jpg)",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "vite"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^10.4.0",
+		"postcss": "^8.3.11",
+		"tailwindcss": "^2.2.19",
+		"vite": "^2.6.14"
+	}
 }

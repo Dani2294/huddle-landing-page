@@ -1,0 +1,58 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+@layer base {
+	:root {
+		--font-heading: 'Poppins', sans-serif;
+		--font-body: 'Open Sans', sans-serif;
+
+		--color-pink: hsl(322, 100%, 66%);
+		--color-pale-cyan: hsl(193, 100%, 96%);
+		--color-dark-cyan: hsl(192, 100%, 9%);
+		--color-grayish-blue: hsl(208, 11%, 55%);
+	}
+}
+
+@layer components {
+	.btn {
+		@apply py-1 px-6 text-xs shadow-md bg-white font-bold text-theme-dark-cyan rounded-full transition cursor-pointer hover:opacity-80;
+	}
+
+	.btn--accent {
+		@apply bg-theme-pink text-theme-pale-cyan py-3 px-16 text-sm;
+	}
+
+	.main_card {
+		@apply flex flex-col-reverse lg:flex-row justify-between items-center gap-5 shadow-main-box rounded-2xl py-12 px-2 lg:px-5 lg:pl-24 space-y-reverse space-y-10;
+	}
+
+	.main_card--reverse {
+		@apply lg:flex-row-reverse;
+	}
+}
+
+header {
+	background-color: var(--color-pale-cyan);
+	background-image: url(./images/bg-hero-mobile.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (min-width: 767px) {
+	header {
+		background-image: url(./images/bg-hero-desktop.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+a {
+	display: block;
+}
